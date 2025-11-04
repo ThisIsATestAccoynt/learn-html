@@ -7,16 +7,17 @@
       font-family: sans-serif;
       line-height: 1.6;
       margin: 20px;
-      background-color: #f4f4f4;
-      color: #333;
+      background-color: #e6ffed;
+      color: #222;
     }
     h1, h2, h3 {
-      color: #005A9C;
+      color: #004d00;
     }
     code {
       background-color: #eee;
       padding: 2px 4px;
       border-radius: 4px;
+      text-decoration: underline;
     }
     pre {
       background-color: #333;
@@ -24,6 +25,10 @@
       padding: 10px;
       border-radius: 4px;
       white-space: pre-wrap;
+    }
+    pre code {
+      background-color: transparent;
+      text-decoration: none;
     }
   </style>
 </head>
@@ -60,6 +65,42 @@
   <p>The <code>src</code> attribute specifies the path to the image, and the <code>alt</code> attribute provides an alternate text for the image.</p>
   <p><b>Example:</b></p>
   <pre><code>&lt;img src="img_girl.jpg" alt="Girl in a jacket" width="500" height="600"&gt;</code></pre>
+
+  <h3>Lists</h3>
+  <p>HTML offers two main types of lists: ordered (<code>&lt;ol&gt;</code>) and unordered (<code>&lt;ul&gt;</code>). List items are defined with the <code>&lt;li&gt;</code> tag.</p>
+  <p><b>Example (Unordered List):</b></p>
+  <pre><code>&lt;ul&gt;
+  &lt;li&gt;Coffee&lt;/li&gt;
+  &lt;li&gt;Tea&lt;/li&gt;
+  &lt;li&gt;Milk&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+  <p><b>Example (Ordered List):</b></p>
+  <pre><code>&lt;ol&gt;
+  &lt;li&gt;First item&lt;/li&gt;
+  &lt;li&gt;Second item&lt;/li&gt;
+  &lt;li&gt;Third item&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+
+  <h3>Divisions and Spans: &lt;div&gt; and &lt;span&gt;</h3>
+  <p>The <code>&lt;div&gt;</code> tag is a block-level container for other HTML elements, often used for styling or layout purposes. The <code>&lt;span&gt;</code> tag is an inline container used to mark up a part of a text, or a part of a document.</p>
+  <p><b>Example:</b></p>
+  <pre><code>&lt;div style="background-color:lightblue;"&gt;
+  &lt;h2&gt;This is a styled division&lt;/h2&gt;
+  &lt;p&gt;This is some text in a div. &lt;span style="color:red;"&gt;This part is in a span.&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+
+  <h3>Text Formatting</h3>
+  <p>HTML has several tags for defining text with a special meaning.</p>
+  <ul>
+    <li><code>&lt;b&gt;</code> - Bold text</li>
+    <li><code>&lt;strong&gt;</code> - Important text (usually bold)</li>
+    <li><code>&lt;i&gt;</code> - Italic text</li>
+    <li><code>&lt;em&gt;</code> - Emphasized text (usually italic)</li>
+    <li><code>&lt;u&gt;</code> - Underlined text</li>
+  </ul>
+  <p><b>Example:</b></p>
+  <pre><code>&lt;p&gt;This is &lt;b&gt;bold&lt;/b&gt; and this is &lt;strong&gt;strong&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;This is &lt;i&gt;italic&lt;/i&gt; and this is &lt;em&gt;emphasized&lt;/em&gt;.&lt;/p&gt;</code></pre>
 
 </body>
 </html>
