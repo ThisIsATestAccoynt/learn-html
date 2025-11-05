@@ -2,16 +2,32 @@
 <html>
 <head>
   <title>HTML Tutorial</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: sans-serif;
+      font-family: 'Roboto', sans-serif;
       line-height: 1.6;
-      margin: 20px;
-      background-color: #e6ffed;
-      color: #222;
+      margin: 0;
+      background-color: #f0f8ff;
+      color: #333;
+    }
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
     }
     h1, h2, h3 {
-      color: #004d00;
+      color: #005A9C;
+    }
+    .card {
+      background-color: #ffffff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
     code {
       background-color: #eee;
@@ -33,74 +49,155 @@
   </style>
 </head>
 <body>
+  <div class="container">
+    <h1>HTML Tutorial for Beginners</h1>
 
-  <h1>HTML Tutorial for Beginners</h1>
+    <div class="card">
+      <h2>Introduction</h2>
+      <p>HTML (HyperText Markup Language) is the standard markup language for creating Web pages.</p>
+    </div>
 
-  <h2>Introduction</h2>
-  <p>HTML (HyperText Markup Language) is the standard markup language for creating Web pages.</p>
+    <h2>HTML Tags</h2>
 
-  <h2>HTML Tags</h2>
+    <div class="card">
+      <h3>Paragraphs: &lt;p&gt;</h3>
+      <p>The <code>&lt;p&gt;</code> tag defines a paragraph.</p>
+      <p><b>Example:</b></p>
+      <pre><code>&lt;p&gt;This is a paragraph.&lt;/p&gt;</code></pre>
+    </div>
 
-  <h3>Paragraphs: &lt;p&gt;</h3>
-  <p>The <code>&lt;p&gt;</code> tag defines a paragraph.</p>
-  <p><b>Example:</b></p>
-  <pre><code>&lt;p&gt;This is a paragraph.&lt;/p&gt;</code></pre>
-
-  <h3>Headings: &lt;h1&gt; - &lt;h6&gt;</h3>
-  <p>The <code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code> tags are used to define HTML headings.</p>
-  <p><code>&lt;h1&gt;</code> defines the most important heading. <code>&lt;h6&gt;</code> defines the least important heading.</p>
-  <p><b>Example:</b></p>
-  <pre><code>&lt;h1&gt;This is a heading 1&lt;/h1&gt;
+    <div class="card">
+      <h3>Headings: &lt;h1&gt; - &lt;h6&gt;</h3>
+      <p>The <code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code> tags are used to define HTML headings.</p>
+      <p><code>&lt;h1&gt;</code> defines the most important heading. <code>&lt;h6&gt;</code> defines the least important heading.</p>
+      <p><b>Example:</b></p>
+      <pre><code>&lt;h1&gt;This is a heading 1&lt;/h1&gt;
 &lt;h2&gt;This is a heading 2&lt;/h2&gt;
 &lt;h3&gt;This is a heading 3&lt;/h3&gt;</code></pre>
+    </div>
 
-  <h3>Links: &lt;a&gt;</h3>
-  <p>The <code>&lt;a&gt;</code> tag defines a hyperlink, which is used to link from one page to another.</p>
-  <p>The <code>href</code> attribute specifies the destination address.</p>
-  <p><b>Example:</b></p>
-  <pre><code>&lt;a href="https://www.w3schools.com"&gt;Visit W3Schools&lt;/a&gt;</code></pre>
+    <div class="card">
+      <h3>Links: &lt;a&gt;</h3>
+      <p>The <code>&lt;a&gt;</code> tag defines a hyperlink, which is used to link from one page to another.</p>
+      <p>The <code>href</code> attribute specifies the destination address.</p>
+      <p><b>Example:</b></p>
+      <pre><code>&lt;a href="https://www.w3schools.com"&gt;Visit W3Schools&lt;/a&gt;</code></pre>
+    </div>
 
-  <h3>Images: &lt;img&gt;</h3>
-  <p>The <code>&lt;img&gt;</code> tag is used to embed an image in an HTML page.</p>
-  <p>The <code>src</code> attribute specifies the path to the image, and the <code>alt</code> attribute provides an alternate text for the image.</p>
-  <p><b>Example:</b></p>
-  <pre><code>&lt;img src="img_girl.jpg" alt="Girl in a jacket" width="500" height="600"&gt;</code></pre>
+    <div class="card">
+      <h3>Images: &lt;img&gt;</h3>
+      <p>The <code>&lt;img&gt;</code> tag is used to embed an image in an HTML page.</p>
+      <p>The s
+      rc</code> attribute specifies the path to the image, and the <code>alt</code> attribute provides an alternate text for the image.</p>
+      <p><b>Example:</b></p>
+      <pre><code>&lt;img src="img_girl.jpg" alt="Girl in a jacket" width="500" height="600"&gt;</code></pre>
+    </div>
 
-  <h3>Lists</h3>
-  <p>HTML offers two main types of lists: ordered (<code>&lt;ol&gt;</code>) and unordered (<code>&lt;ul&gt;</code>). List items are defined with the <code>&lt;li&gt;</code> tag.</p>
-  <p><b>Example (Unordered List):</b></p>
-  <pre><code>&lt;ul&gt;
+    <div class="card">
+      <h3>Lists</h3>
+      <p>HTML offers two main types of lists: ordered (<code>&lt;ol&gt;</code>) and unordered (<code>&lt;ul&gt;</code>). List items are defined with the <code>&lt;li&gt;</code> tag.</p>
+      <p><b>Example (Unordered List):</b></p>
+      <pre><code>&lt;ul&gt;
   &lt;li&gt;Coffee&lt;/li&gt;
   &lt;li&gt;Tea&lt;/li&gt;
   &lt;li&gt;Milk&lt;/li&gt;
 &lt;/ul&gt;</code></pre>
-  <p><b>Example (Ordered List):</b></p>
-  <pre><code>&lt;ol&gt;
+      <p><b>Example (Ordered List):</b></p>
+      <pre><code>&lt;ol&gt;
   &lt;li&gt;First item&lt;/li&gt;
   &lt;li&gt;Second item&lt;/li&gt;
   &lt;li&gt;Third item&lt;/li&gt;
 &lt;/ol&gt;</code></pre>
+    </div>
 
-  <h3>Divisions and Spans: &lt;div&gt; and &lt;span&gt;</h3>
-  <p>The <code>&lt;div&gt;</code> tag is a block-level container for other HTML elements, often used for styling or layout purposes. The <code>&lt;span&gt;</code> tag is an inline container used to mark up a part of a text, or a part of a document.</p>
-  <p><b>Example:</b></p>
-  <pre><code>&lt;div style="background-color:lightblue;"&gt;
+    <div class="card">
+      <h3>Divisions and Spans: &lt;div&gt; and &lt;span&gt;</h3>
+      <p>The <code>&lt;div&gt;</code> tag is a block-level container for other HTML elements, often used for styling or layout purposes. The <code>&lt;span&gt;</code> tag is an inline container used to mark up a part of a text, or a part of a document.</p>
+      <p><b>Example:</b></p>
+      <pre><code>&lt;div style="background-color:lightblue;"&gt;
   &lt;h2&gt;This is a styled division&lt;/h2&gt;
   &lt;p&gt;This is some text in a div. &lt;span style="color:red;"&gt;This part is in a span.&lt;/span&gt;&lt;/p&gt;
 &lt;/div&gt;</code></pre>
+    </div>
 
-  <h3>Text Formatting</h3>
-  <p>HTML has several tags for defining text with a special meaning.</p>
-  <ul>
-    <li><code>&lt;b&gt;</code> - Bold text</li>
-    <li><code>&lt;strong&gt;</code> - Important text (usually bold)</li>
-    <li><code>&lt;i&gt;</code> - Italic text</li>
-    <li><code>&lt;em&gt;</code> - Emphasized text (usually italic)</li>
-    <li><code>&lt;u&gt;</code> - Underlined text</li>
-  </ul>
-  <p><b>Example:</b></p>
-  <pre><code>&lt;p&gt;This is &lt;b&gt;bold&lt;/b&gt; and this is &lt;strong&gt;strong&lt;/strong&gt;.&lt;/p&gt;
+    <div class="card">
+      <h3>Text Formatting</h3>
+      <p>HTML has several tags for defining text with a special meaning.</p>
+      <ul>
+        <li><code>&lt;b&gt;</code> - Bold text</li>
+        <li><code>&lt;strong&gt;</code> - Important text (usually bold)</li>
+        <li><code>&lt;i&gt;</code> - Italic text</li>
+        <li><code>&lt;em&gt;</code> - Emphasized text (usually italic)</li>
+        <li><code>&lt;u&gt;</code> - Underlined text</li>
+      </ul>
+      <p><b>Example:</b></p>
+      <pre><code>&lt;p&gt;This is &lt;b&gt;bold&lt;/b&gt; and this is &lt;strong&gt;strong&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;This is &lt;i&gt;italic&lt;/i&gt; and this is &lt;em&gt;emphasized&lt;/em&gt;.&lt;/p&gt;</code></pre>
+    </div>
 
+    <h2>Advanced HTML</h2>
+
+    <div class="card">
+      <h3>Tables</h3>
+      <p>The <code>&lt;table&gt;</code> tag defines an HTML table. Each table row is defined with a <code>&lt;tr&gt;</code> tag. A table header is defined with a <code>&lt;th&gt;</code> tag. A table cell is defined with a <code>&lt;td&gt;</code> tag.</p>
+      <p><b>Example:</b></p>
+      <pre><code>&lt;table&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Firstname&lt;/th&gt;
+    &lt;th&gt;Lastname&lt;/th&gt;
+    &lt;th&gt;Age&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Jill&lt;/td&gt;
+    &lt;td&gt;Smith&lt;/td&gt;
+    &lt;td&gt;50&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Eve&lt;/td&gt;
+    &lt;td&gt;Jackson&lt;/td&gt;
+    &lt;td&gt;94&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+    </div>
+
+    <div class="card">
+      <h3>Forms</h3>
+      <p>The <code>&lt;form&gt;</code> tag is used to create an HTML form for user input. The <code>&lt;input&gt;</code> tag is the most used form element.</p>
+      <p><b>Example:</b></p>
+      <pre><code>&lt;form&gt;
+  &lt;label for="fname"&gt;First name:&lt;/label&gt;&lt;br&gt;
+  &lt;input type="text" id="fname" name="fname"&gt;&lt;br&gt;
+  &lt;label for="lname"&gt;Last name:&lt;/label&gt;&lt;br&gt;
+  &lt;input type="text" id="lname" name="lname"&gt;&lt;br&gt;&lt;br&gt;
+  &lt;input type="submit" value="Submit"&gt;
+&lt;/form&gt;</code></pre>
+    </div>
+
+    <div class="card">
+      <h3>Semantic HTML</h3>
+      <p>Semantic HTML tags provide meaning to the web page and its content. Examples include <code>&lt;header&gt;</code>, <code>&lt;footer&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;section&gt;</code>, and <code>&lt;article&gt;</code>.</p>
+      <p><b>Example:</b></p>
+      <pre><code>&lt;header&gt;
+  &lt;h1&gt;My Website&lt;/h1&gt;
+&lt;/header&gt;
+
+&lt;nav&gt;
+  &lt;a href="#"&gt;Home&lt;/a&gt;
+  &lt;a href="#"&gt;About&lt;/a&gt;
+  &lt;a href="#"&gt;Contact&lt;/a&gt;
+&lt;/nav&gt;
+
+&lt;section&gt;
+  &lt;article&gt;
+    &lt;h2&gt;Article Title&lt;/h2&gt;
+    &lt;p&gt;Article content goes here.&lt;/p&gt;
+  &lt;/article&gt;
+&lt;/section&gt;
+
+&lt;footer&gt;
+  &lt;p&gt;Copyright &copy; 2023&lt;/p&gt;
+&lt;/footer&gt;</code></pre>
+    </div>
+  </div>
 </body>
 </html>
